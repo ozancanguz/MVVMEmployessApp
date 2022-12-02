@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/listFragments"
-        android:name="com.ozancanguz.mvvmemployessapp.ListFragments"
+        android:name="com.ozancanguz.mvvmemployessapp.ui.fragments.listfragment.ListFragments"
         android:label="fragment_list_fragments"
         tools:layout="@layout/fragment_list_fragments" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.ozancanguz.mvvmemployessapp.DetailsFragment"
+        android:name="com.ozancanguz.mvvmemployessapp.ui.fragments.detailsfragment.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/favoriteEmpFragment"
-        android:name="com.ozancanguz.mvvmemployessapp.FavoriteEmpFragment"
+        android:name="com.ozancanguz.mvvmemployessapp.ui.fragments.favoriteEmpFragment.FavoriteEmpFragment"
         android:label="fragment_favorite_emp"
         tools:layout="@layout/fragment_favorite_emp" />
 </navigation>
