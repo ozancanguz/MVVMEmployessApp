@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/emp_nav"
+    app:startDestination="@id/listFragments">
+
+    <fragment
+        android:id="@+id/listFragments"
+        android:name="com.ozancanguz.mvvmemployessapp.ListFragments"
+        android:label="fragment_list_fragments"
+        tools:layout="@layout/fragment_list_fragments" >
+        <action
+            android:id="@+id/action_listFragments_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_listFragments_self"
+            app:destination="@id/listFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.ozancanguz.mvvmemployessapp.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_detailsFragment_to_listFragments"
+            app:destination="@id/listFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteEmpFragment"
+        android:name="com.ozancanguz.mvvmemployessapp.FavoriteEmpFragment"
+        android:label="fragment_favorite_emp"
+        tools:layout="@layout/fragment_favorite_emp" />
+</navigation>
